@@ -1,0 +1,133 @@
+:root {
+  --primaryFont: 'Arial', sans-serif; /* Example font, replace with your choice */
+}
+
+.about {
+  min-height: 100vh;
+  position: relative;
+}
+
+.about .line-styling {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .line-styling .style-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000; /* Ensure circles are visible, adjust color as needed */
+}
+
+.about .line-styling .style-line {
+  width: 95%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #000; /* Ensure line is visible, adjust color as needed */
+}
+
+.about-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 8rem;
+  height: fit-content;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex: 0.5;
+  width: 100%;
+  height: fit-content;
+  padding: 0 20px; /* Added padding for better text readability */
+}
+
+.about-description > h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-family: var(--primaryFont);
+}
+
+.about-description > p {
+  font-size: 18px; /* Adjusted for better readability on all screens */
+  color: #e0d9d9;
+  font-family: var(--primaryFont);
+  text-align: left;
+}
+
+.about-img {
+  margin-top: 40px;
+  pointer-events: none;
+}
+
+.about-img > img {
+  width: 380px;
+  flex: 0.5;
+}
+
+@media (min-width: 992px) and (max-width: 1380px) {
+  .about-description > h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .about-description > p {
+    font-size: 18px;
+  }
+  .about-img > img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about .line-styling {
+    top: 20px;
+  }
+  .about-body {
+    padding-top: 2rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .about-description {
+    flex: 1;
+    align-items: center; /* Center alignment for smaller screens */
+  }
+  .about-description > h2,
+  .about-description > p {
+    text-align: center;
+  }
+  .about-img > img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about .line-styling .style-circle {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about .line-styling {
+    display: none; /* Hide line styling on very small screens for simplicity */
+  }
+  .about-description > h2,
+  .about-description > p {
+    font-size: 16px; /* Further adjusted for very small screens */
+  }
+  .about-img > img {
+    width: 200px;
+  }
+}

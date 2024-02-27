@@ -1,0 +1,118 @@
+.experience {
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.experience-body {
+    display: flex;
+    flex-direction: row; /* Default layout */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.experience-description {
+    width: 100%;
+    flex: 0.65;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centered by default, adjust as necessary */
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.experience-description > h1 {
+    font-size: 4rem;
+    font-family: var(--primaryFont);
+    margin-bottom: 2rem;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: row; /* Default layout */
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin: 1.5rem 2%;
+    transition: background-color 200ms ease-in-out;
+}
+
+.expcard-img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.expcard-img > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.experience-details {
+    margin-left: 0.6rem;
+}
+
+.experience-details > h6, .experience-details > h4, .experience-details > h5 {
+    font-family: var(--primaryFont);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--textColor);
+}
+
+.experience-image {
+    box-sizing: border-box;
+    padding: 1rem;
+    flex: 0.35;
+    margin-top: 1rem;
+    pointer-events: none;
+}
+
+.experience-image > img {
+    width: 100%;
+    pointer-events: none;
+}
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 992px) {
+    .experience-body {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .experience-description, .experience-card {
+        margin-right: 0; /* Remove right margin */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .experience-description > h1 {
+        font-size: 3.6rem; /* Adjust heading size */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience-description > h1 {
+        font-size: 3rem; /* Further reduce heading size for very small screens */
+    }
+
+    .experience-card {
+        flex-direction: column; /* Stack card elements vertically */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .experience-details, .expcard-img {
+        margin-bottom: 0.5rem; /* Adjust spacing */
+    }
+
+    .experience-description, .experience-card {
+        padding: 0.5rem; /* Further reduce padding */
+    }
+}

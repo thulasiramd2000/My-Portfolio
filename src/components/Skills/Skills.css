@@ -1,0 +1,132 @@
+/* Skills.css - Full CSS with responsive adjustments for skills list grid */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 60vh;
+    padding: 2.5rem 2rem;
+    background-color: var(--background-color); /* Replace with your theme's background color variable */
+}
+
+.skillsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsHeader h2 {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--primary-color); /* Replace with your theme's primary color variable */
+}
+
+.skillsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3.5rem;
+}
+
+.skill--scroll {
+    width: 100%;
+    margin: 0 2rem;
+}
+
+.skill--box {
+    background: var(--box-background-color); /* Replace with your theme's box background color variable */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    width: auto; /* Allow the box to resize based on content */
+    height: auto; /* Allow the box to resize based on content */
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: 300ms ease-in-out;
+}
+
+.skill--box:hover {
+    transform: scale(1.15);
+}
+
+.skill--box img {
+    height: 50px;
+    pointer-events: none;
+}
+
+.skill--box h3 {
+    font-family: var(--primaryFont);
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--text-color); /* Replace with your theme's text color variable */
+}
+
+/* Updated Styles for the skills list grid below the marquee */
+.skillsListGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Adapt columns to the container size */
+    gap: 0.5rem;
+    margin-top: 2rem;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: var(--primaryFont);
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.skillsCategory {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1rem;
+    color: var(--primary-color);
+}
+
+.skillsDetail {
+    text-align: left;
+    padding-left: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-color);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .skillsListGrid {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        font-size: calc(0.75rem + 1vw); /* Increase base size on small screens for readability */
+    }
+
+    .skillsCategory,
+    .skillsDetail {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        text-align: center;
+        font-size: calc(0.75rem + 1vw); /* Dynamic font size for readability */
+    }
+}
+
+/* If you need to adjust the item sizes for very small screens */
+@media (max-width: 480px) {
+    .skillsListGrid {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+        font-size: calc(0.75rem + 2vw); /* Further increase base size for very small screens */
+    }
+
+    .skillsCategory,
+    .skillsDetail {
+        padding: 0.5rem;
+        font-size: calc(0.75rem + 2vw); /* Dynamic font size for readability */
+    }
+}
+
+/* Continue with additional responsive styles as needed */
