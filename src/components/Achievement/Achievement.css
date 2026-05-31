@@ -123,6 +123,7 @@
 @media (min-width: 992px) and (max-width: 1380px) {
     .achievement-card {
         justify-content: flex-start;
+        height: fit-content;
     }
 
     .achievement-body {
@@ -146,6 +147,15 @@
     }
     .achievecard-imgcontainer {
        margin-left: 1rem;
+    }
+
+    .achievecard-details1 {
+        margin-bottom: 20px;
+    }
+
+    .achievecard-details2 {
+        position: static;
+        width: 100%;
     }
 
 }

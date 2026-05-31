@@ -164,7 +164,7 @@
 }
 
 /* 600px — stacked mobile layout */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .landing {
     height: auto;
     min-height: 100vh;
