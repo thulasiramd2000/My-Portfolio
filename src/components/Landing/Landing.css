@@ -98,15 +98,6 @@
   gap: 1rem;
 }
 
-.makeStyles-buttonContainer-7 {
-  margin-top: 2rem;
-  justify-content: unset !important;
-}
-
-.jss7 {
-  margin-top: 2rem;
-  justify-content: unset !important;
-}
 /* 1200px */
 @media (max-width: 1200px) {
   .landing--img {

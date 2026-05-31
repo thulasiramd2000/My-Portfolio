@@ -211,14 +211,21 @@ function Navbar() {
                         </Fade>
 
                         <Fade left>
-                           <a href="https://drive.google.com/file/d/1cfqJ822ZA8rE5fhUEBPjcqVXXsx7M2Ol/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                            <NavLink
+                                to='/'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                           <div>     
                               <div className={classes.drawerItem}>
                                 <HiDocumentText className={classes.drawerIcon} />
                                 <span className={classes.drawerLinks}>
                                    Resume
                                 </span>
                               </div>
-                           </a>
+                           </div>
+                            </NavLink>
                         </Fade>
 
 

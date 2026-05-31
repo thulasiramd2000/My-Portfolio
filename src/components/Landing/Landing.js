@@ -20,9 +20,10 @@ function Landing() {
         buttonContainer: {
             display: 'flex',
             flexDirection: 'row', // Default to horizontal layout
-            justifyContent: 'center',
+            justifyContent: 'unset',
             alignItems: 'center',
             gap: '10px', // Adds space between buttons
+            marginTop: '2rem',
             [t.breakpoints.down('sm')]: {
                 flexDirection: 'column', // Stack buttons vertically on small screens
             },
