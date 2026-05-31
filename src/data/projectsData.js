@@ -12,7 +12,7 @@ export const projectsData = [
         projectName: 'Insurance-AI Knowledge Assistant',
         projectDesc: 'RAG assistant built with LangChain, OpenAI, and Chroma with a Gradio interface, streamlining employee access to critical insurance knowledge and cutting query resolution time significantly.',
         tags: ['Python', 'LangChain', 'OpenAI', 'Chroma', 'Gradio', 'RAG'],
-        code: 'https://github.com/thulasiramd2000',
+        code: 'https://github.com/thulasiramd2000/Insurance-AI-Knowledge-Assistant',
         demo: '',
         image: InsuranceAI
     },
@@ -31,7 +31,7 @@ export const projectsData = [
         projectDesc: 'A depression support chatbot using a combination of GRU and LSTM networks with NLTK preprocessing to guide users toward mental health resources.',
         tags: ['Python', 'TensorFlow', 'NLTK', 'GRU', 'LSTM', 'Seaborn'],
         code: 'https://github.com/thulasiramd2000/SADie-NLP-chatbot-master',
-        demo: 'https://github.com/thulasiramd2000/SADie-NLP-chatbot-master/blob/main/nlp_LSTM%20%26%20GRU.ipynb',
+        demo: '',
         image: chatbot
     },
     {
@@ -49,7 +49,7 @@ export const projectsData = [
         projectDesc: 'AI-driven analysis boosting sales and efficiency for a global coffee chain with 1,000+ stores and $400M revenue using sales forecasting and inventory management to cut waste.',
         tags: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
         code: 'https://github.com/thulasiramd2000/Optimizing-Inventory-and-Sales-in-Global-Coffee-Chains-Advanced-AI-Approach',
-        demo: 'https://github.com/thulasiramd2000/Optimizing-Inventory-and-Sales-in-Global-Coffee-Chains-Advanced-AI-Approach/blob/main/Source%20Code.ipynb',
+        demo: '',
         image: Coffee
     },
     {
