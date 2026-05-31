@@ -13,13 +13,13 @@ function Skills() {
         boxShadow: `0px 0px 30px ${theme.primary30}`
     };
 
-    // Skills list object
     const skillsList = {
-        Languages: "C, C++, Java, JavaScript, SQL, Python, HTML, CSS",
-        Frameworks: "Spring Boot, React, NodeJS, J2EE",
-        "Tools & Technologies": "Git, JUnit, Visual Studio, REST API, Kubernetes, Eclipse, DevOps, Jenkins, Docker",
-        "Databases & Cloud Services": "MySQL, PostgreSQL, MongoDB, AWS, Azure",
-        Subjects: "Data Structures & Algorithms, Object Oriented Programming, NLP"
+        Frontend: "React.js, Redux, JavaScript, HTML5, CSS, DOM Manipulation, Reusable Component Libraries, Node.js, TypeScript, Jest, Cypress, ESLint",
+        "APIs & Backend": "Python, FastAPI, Flask, Django, REST APIs, Pydantic, Swagger, Java, C/C++, SQL",
+        "Data & Visualization": "Pandas, NumPy, Snowflake, Plotly, Matplotlib, Seaborn, Tableau, ETL/ELT, Data Pipelines, Data Modeling",
+        "Cloud & Infrastructure": "AWS (S3, EC2, Lambda, SageMaker, Bedrock, Cognito), Docker, Kubernetes, OpenShift, CI/CD, Kafka, Airflow, Redis, Hazelcast",
+        "AI / ML": "LangChain, RAG, GPT-4, LLaMA, BERT, T5, HuggingFace, PyTorch, TensorFlow, Scikit-Learn, Prompt Engineering, PEFT (LoRA/QLoRA), RLHF, MLflow, MLOps",
+        "Monitoring & Performance": "Datadog, Kibana / ELK, Adobe Analytics, Lighthouse, Chrome DevTools, Grafana, Prometheus"
     };
 
     return (

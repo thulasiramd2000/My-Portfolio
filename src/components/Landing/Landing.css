@@ -10,11 +10,12 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
   position: relative;
 }
 
 .landing--img {
-  --img-size: 400px;
+  --img-size: 380px;
   position: absolute;
   left: 35%;
   transform: translateX(-50%);
@@ -27,7 +28,7 @@
 }
 
 .landing--container-left {
-  flex: 35%;
+  flex: 0 0 35%;
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -43,9 +44,9 @@
 }
 
 .landing--social {
-  font-size: 45px; /* Increased size */
-  margin: 0 1rem;
-  transition: transform 0.5s;
+  font-size: 42px;
+  margin: 0 0.75rem;
+  transition: transform 0.3s;
 }
 
 .landing--social:hover {
@@ -53,9 +54,8 @@
 }
 
 .landing--container-right {
-  flex: 65%;
+  flex: 0 0 65%;
   height: 100%;
-  background-color: #eaeaea;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -63,179 +63,215 @@
 }
 
 .lcr--content {
-  width: 45%;
-  margin-right: 7rem;
+  width: 55%;
+  margin-right: 5rem;
   font-family: var(--primaryFont);
   font-style: normal;
 }
 
 .lcr--content h6 {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin-bottom: -0.85rem;
   opacity: 0.8;
 }
 
 .lcr--content h1 {
   font-weight: 600;
-  font-size: 3.25rem;
+  font-size: 3rem;
   line-height: 110%;
   margin: 1rem 0;
 }
 
 .lcr--content p {
-  margin-top: 1.45rem;
+  margin-top: 1.25rem;
   font-weight: 500;
-  font-size: 1.15rem;
-  opacity: 0.7;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.75;
 }
 
 .lcr-buttonContainer {
   margin-top: 2rem;
-  width: 350px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-family: "var(--primaryFont)", sans-serif;
+  gap: 1rem;
 }
 
-@media (max-width: 1100px) {
+.makeStyles-buttonContainer-7 {
+  margin-top: 2rem;
+  justify-content: unset !important;
+}
+/* 1200px */
+@media (max-width: 1200px) {
   .landing--img {
-    --img-size: 350px;
-  }
-  .lcl--content {
-    margin: 2rem;
+    --img-size: 340px;
   }
 
-  .lcr--content h6 {
-    font-size: 1.1rem;
+  .lcr--content {
+    width: 60%;
+    margin-right: 3rem;
   }
 
   .lcr--content h1 {
-    font-size: 3rem;
-  }
-
-  .lcr--content p {
-    margin-top: 0.3rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    font-size: 1rem;
-  }
-
-  .lcr-buttonContainer {
-    margin-top: 1rem;
-    flex-direction: column;
-    width: 200px;
-    height: 120px;
-    align-items: flex-start;
+    font-size: 2.75rem;
   }
 }
 
-@media (max-width: 900px) {
+/* 1100px */
+@media (max-width: 1100px) {
   .landing--img {
     --img-size: 300px;
   }
 
-  .landing--social {
-    font-size: 40px;
-  }
-  .lcr--content {
-    width: 60%;
-    margin-top: 10%;
-    margin-right: 6%;
+  .lcl--content {
+    margin: 2rem;
   }
 
-  .lcr-buttonContainer {
-    margin-top: 1rem;
-    flex-direction: column;
-    width: 200px;
-    height: 120px;
-    align-items: flex-start;
-  }
-  .lcr-buttonContainer button:nth-child(2) {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .landing--container {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .landing--img {
-    --img-size: 200px;
-    left: 50%;
-    top: 30%;
-    border: 8px solid #eaeaea;
-    transform: translate(-50%, -50%);
-  }
-  .landing--container-left {
-    flex: initial;
-    width: 100%;
-    height: 30%;
-  }
-  .landing--social {
-    font-size: 35px;
-    display: block; /* Adjusted to keep icons visible */
-  }
-  .landing--container-right {
-    box-sizing: border-box;
-    padding: 0 2rem;
-    flex: initial;
-    height: 70%;
-    width: 100%;
-    background-color: #eaeaea;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2rem;
-  }
   .lcr--content {
-    margin-top: 20%;
-    margin-right: initial;
-    width: 100%;
+    width: 65%;
+    margin-right: 2rem;
   }
+
   .lcr--content h6 {
     font-size: 1rem;
-    text-align: center;
   }
+
   .lcr--content h1 {
     font-size: 2.5rem;
-    text-align: center;
   }
+
   .lcr--content p {
     font-size: 0.95rem;
-    text-align: center;
-    margin: 0 auto;
-    width: 90%;
   }
-  .lcr-buttonContainer {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+}
+
+/* 900px — tablet */
+@media (max-width: 900px) {
+  .landing--img {
+    --img-size: 260px;
+  }
+
+  .lcr--content {
+    width: 70%;
+    margin-right: 1.5rem;
+    margin-top: 8%;
+  }
+
+  .lcr--content h1 {
+    font-size: 2.25rem;
+  }
+
+  .landing--social {
+    font-size: 34px;
+  }
+}
+
+/* 600px — stacked mobile layout */
+@media (max-width: 600px) {
+  .landing {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .landing--container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .landing--container-left {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 38vh;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .lcl--content {
+    margin: 1.5rem;
     justify-content: center;
   }
-}
 
-@media (max-width: 500px) {
-  .lcr--content {
-    margin-top: 35%;
-  }
-}
-
-@media (max-width: 370px) {
-  .lcr--content {
-    margin-top: 60%;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-  .landing {
-    height: 100%;
+  .landing--social {
+    font-size: 30px;
+    margin: 0 0.6rem;
   }
 
   .landing--img {
-    --img-size: 150px;
+    --img-size: 190px;
     left: 50%;
-    top: 20%;
+    top: 19vh;
+    transform: translate(-50%, -50%);
+    border: 6px solid #eaeaea;
+  }
+
+  .landing--container-right {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 62vh;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1.5rem 2rem;
+    box-sizing: border-box;
+  }
+
+  .lcr--content {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .lcr--content h6 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .lcr--content h1 {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+
+  .lcr--content p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0.75rem auto 0;
+    width: 95%;
+  }
+
+  .lcr-buttonContainer {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .landing--img {
+    --img-size: 165px;
+    top: 20vh;
+  }
+
+  .lcr--content {
+    margin-top: 3.5rem;
+  }
+
+  .lcr--content h1 {
+    font-size: 1.9rem;
+  }
+
+  .lcr--content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* 370px — very small phones */
+@media (max-width: 370px) {
+  .landing--img {
+    --img-size: 140px;
+  }
+
+  .lcr--content h1 {
+    font-size: 1.7rem;
   }
 }

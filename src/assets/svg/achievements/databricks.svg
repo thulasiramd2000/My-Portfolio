@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <rect width="200" height="120" rx="10" fill="#FF3621"/>
+  <polygon points="100,18 126,33 126,63 100,78 74,63 74,33" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <polygon points="100,30 116,39 116,57 100,66 84,57 84,39" fill="#ffffff" opacity="0.3"/>
+  <line x1="74" y1="48" x2="126" y2="48" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+  <text x="100" y="96" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">databricks</text>
+  <text x="100" y="112" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.85">Fundamentals Accreditation</text>
+</svg>

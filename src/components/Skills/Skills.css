@@ -71,62 +71,62 @@
     color: var(--text-color); /* Replace with your theme's text color variable */
 }
 
-/* Updated Styles for the skills list grid below the marquee */
+/* Skills list grid below the marquee */
 .skillsListGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Adapt columns to the container size */
-    gap: 0.5rem;
-    margin-top: 2rem;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 0.75rem 0;
+    margin-top: 2.5rem;
+    width: 90%;
+    max-width: 900px;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem 2rem;
     box-sizing: border-box;
     font-family: var(--primaryFont);
-    font-size: 1.2rem; /* Increased font size */
+    font-size: 1.05rem;
 }
 
 .skillsCategory {
     font-weight: bold;
     text-align: right;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
     color: var(--primary-color);
+    white-space: nowrap;
 }
 
 .skillsDetail {
     text-align: left;
     padding-left: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    border-left: 2px solid rgba(128,128,128,0.2);
+    line-height: 1.6;
     color: var(--text-color);
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .skillsListGrid {
-        grid-template-columns: 1fr; /* Single column layout for smaller screens */
-        font-size: calc(0.75rem + 1vw); /* Increase base size on small screens for readability */
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 1rem;
+        font-size: 0.95rem;
     }
 
-    .skillsCategory,
+    .skillsCategory {
+        text-align: left;
+        padding-right: 0;
+        margin-top: 0.75rem;
+    }
+
     .skillsDetail {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-        text-align: center;
-        font-size: calc(0.75rem + 1vw); /* Dynamic font size for readability */
+        padding-left: 0;
+        border-left: none;
+        border-top: 2px solid rgba(128,128,128,0.2);
+        padding-top: 0.4rem;
     }
 }
 
-/* If you need to adjust the item sizes for very small screens */
 @media (max-width: 480px) {
     .skillsListGrid {
-        grid-template-columns: 1fr; /* Single column layout for very small screens */
-        font-size: calc(0.75rem + 2vw); /* Further increase base size for very small screens */
-    }
-
-    .skillsCategory,
-    .skillsDetail {
-        padding: 0.5rem;
-        font-size: calc(0.75rem + 2vw); /* Dynamic font size for readability */
+        font-size: 0.875rem;
     }
 }
-
-/* Continue with additional responsive styles as needed */

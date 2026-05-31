@@ -1,49 +1,55 @@
 import AWS from '../assets/png/AWS.png'
-import IOT from '../assets/png/IOT.png'
 import irjet from '../assets/png/IRJET.png'
+import udemy from '../assets/svg/achievements/udemy.svg'
+import databricks from '../assets/svg/achievements/databricks.svg'
+import micro1 from '../assets/svg/achievements/micro1.svg'
+
 export const achievementData = {
-
-    achievements : [
+    achievements: [
         {
-            id : 1,
-            title : 'Learning Amazon Web Services (AWS) for Developers',
-            details : 'A high-level overview just for developers, focusing on the AWS features and services(AWS Lambda, DynamoDB, ElastiCache, Elastic Beanstalk, S3, SQS, SNS)',
-            date : 'Jul 14, 2023',
-            field : 'Automation',
-            image : AWS,
-            link: "https://drive.google.com/file/d/1l2umgUB6ggL6WYtDPVHiSVC11xBLtUdJ/view?usp=drive_link",
+            id: 1,
+            title: 'AWS Certified Developer – Associate',
+            details: 'Validates expertise in developing and maintaining AWS-based applications. Covers Lambda, DynamoDB, S3, SQS, SNS, Cognito, and Elastic Beanstalk. Valid through March 2027.',
+            date: 'Mar 6, 2024',
+            field: 'Cloud',
+            image: AWS,
+            link: 'https://www.credly.com/badges/d0be3813-2ac9-4621-a86b-ecd98d13d6d2/linked_in_profile',
         },
         {
-            id : 2,
-            title : 'Inplant Training-IOT',
-            details : 'IoT Inplant Training involves hands-on experience with technologies like sensors, microcontrollers, and cloud computing to develop interconnected smart devices.',
-            date : 'Mar 20, 2018',
-            field : 'Automation',
-            image : IOT,
-            link: "https://drive.google.com/file/d/1W8Dtys07gxcOeIoq92Sk0vKOvX71g8gR/view?usp=drive_link",
+            id: 2,
+            title: 'LLM Engineering: Master AI & Large Language Models',
+            details: 'Completed a 25.5-hour Udemy course by Ed Donner (Founder, Nebula.io) covering LLM architectures, fine-tuning, RAG systems, prompt engineering, and production deployment.',
+            date: 'Dec 15, 2024',
+            field: 'AI / LLMs',
+            image: udemy,
+            link: 'https://ude.my/UC-750b526b-043a-4430-86dd-e3354bdc8823',
         },
         {
-            id : 3,
-            title : 'Journal Publication: ',
-            details : 'Published a journal paper under volume 8 and issue* 5 in International Research Journal of Engineering and Technology (IRJET).',
-            date : 'May 20, 2021',
-            field : 'Automation',
-            image : irjet ,
-            link: "https://drive.google.com/file/d/1kk564whB_weX4355xHIIdgYEA5jDD799/view?usp=drive_link",
-        }
-
+            id: 3,
+            title: 'Databricks Fundamentals Accreditation',
+            details: 'Databricks Academy accreditation covering the Lakehouse architecture, Delta Lake, Apache Spark fundamentals, and data engineering workflows.',
+            date: 'Dec 21, 2024',
+            field: 'Data Engineering',
+            image: databricks,
+            link: 'https://credentials.databricks.com/f5397e5d-5db9-4d2a-a816-f3b200b13c39',
+        },
+        {
+            id: 4,
+            title: 'Micro1 — Top 1% Data Manipulation (Senior)',
+            details: 'Ranked in the top 1% of all candidates through Micro1\'s AI-powered vetting process, demonstrating senior-level proficiency in Data Manipulation.',
+            date: 'Nov 17, 2024',
+            field: 'AI / Data',
+            image: micro1,
+            link: 'https://drive.google.com/file/d/1G969MRTRVAZJYAE3wp7flkne-tjmtJrL/view?usp=sharing',
+        },
+        {
+            id: 5,
+            title: 'IRJET Journal Publication',
+            details: 'Published a research paper in the International Research Journal of Engineering and Technology (IRJET), Volume 8, Issue 5. Impact factor 7.8.',
+            date: 'May 20, 2021',
+            field: 'Research',
+            image: irjet,
+            link: 'https://drive.google.com/file/d/1kk564whB_weX4355xHIIdgYEA5jDD799/view?usp=drive_link',
+        },
     ]
 }
-
-
-// Do not remove any fields.
-// Leave it blank instead as shown below.
-
-/*
-
-export const achievementData = {
-    bio : "",
-    achievements : []
-}
-
-*/
